@@ -16,7 +16,7 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
     headers: {
-      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
   }),
   endpoints: (builder) => ({
