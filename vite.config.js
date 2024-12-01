@@ -6,13 +6,16 @@ import process from "process";
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3002,
+    "/api": {
+      target: "https://auth-backend-six-tau.vercel.app",
+      changeOrigin: true,
+      secure: false,
+    },
   },
   define: {
     "process.env": {},
-
   },
-  css:{
-    postcss:"./postcss.config.js"
-  }
+  css: {
+    postcss: "./postcss.config.js",
+  },
 });
