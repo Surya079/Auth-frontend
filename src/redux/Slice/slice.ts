@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import API_URL from "../../constant/apiUrl";
 
-
 declare global {
   interface ImportMeta {
     env: {
@@ -15,7 +14,7 @@ const BASE_URL = import.meta.env.VITE_APP_API_URL;
 export const apiSlice = createApi({
   reducerPath: "apiSlice",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://auth-backend-gules.vercel.app/api",
+    baseUrl: BASE_URL,
   }),
   endpoints: (builder) => ({
     register: builder.mutation({
@@ -32,9 +31,7 @@ export const apiSlice = createApi({
         body,
       }),
     }),
-   
   }),
 });
 
-export const { useRegisterMutation, useLoginMutation } =
-  apiSlice;
+export const { useRegisterMutation, useLoginMutation } = apiSlice;
