@@ -6,10 +6,12 @@ import process from "process";
 export default defineConfig({
   plugins: [react()],
   server: {
-    "/api": {
-      target: "https://auth-backend-six-tau.vercel.app",
-      changeOrigin: true,
-      secure: false,
+    proxy: {
+      "/api": {
+        target: "https://auth-backend-six-tau.vercel.app",
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
   define: {
