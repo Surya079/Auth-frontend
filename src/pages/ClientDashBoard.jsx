@@ -49,15 +49,15 @@ export const ClientDashboard = () => {
         <div className="text-black font-bold ">Day of the advice</div>
         <div>
           <div
-            className="p-5 md:text-2xl text-5xl text-center font-boldanimate-pulse"
+            className="p-5 md:text-2xl text-2xl text-center font-boldanimate-pulse"
             style={{
               animation: "zoomIn 1.5s ease-in-out forwards",
             }}>
             {advice}
           </div>
         </div>
-        <div className="text-gray-600 text-[10px]">
-          <span className="text-black font-bold">Note :{" "}</span>If you like my application or any query about this
+        <div className="text-gray-600 text-center p-5 text-[10px]">
+          <span className="text-black  font-bold">Note :{" "}</span>If you like my application or any query about this
           application let's text on :{" "}
           <Link
             className="text-blue-400"
