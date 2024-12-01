@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import API_URL from "../../constant/apiUrl";
-import { useAppSelector } from "../../redux/customHook";
-import { selectAuth } from "../../redux/Slice/authSlice";
+
 
 declare global {
   interface ImportMeta {
