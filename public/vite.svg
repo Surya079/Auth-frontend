@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="lock-gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#41D1FF"/>
+      <stop offset="100%" stop-color="#BD34FE"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#lock-gradient)" d="M192 96h-8V56a56 56 0 1 0-112 0v40h-8a40 40 0 0 0-40 40v96a40 40 0 0 0 40 40h128a40 40 0 0 0 40-40V136a40 40 0 0 0-40-40zm-72-40V56a40 40 0 1 1 80 0v40h-80zm56 16h-40v40h40a24 24 0 0 1 24 24v96a24 24 0 0 1-24 24H88a24 24 0 0 1-24-24V136a24 24 0 0 1 24-24h40V72h-40a56 56 0 1 0 112 0z"/>
+</svg>
