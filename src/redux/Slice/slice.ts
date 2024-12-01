@@ -15,9 +15,6 @@ export const apiSlice = createApi({
   reducerPath: "apiSlice",
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
   }),
   endpoints: (builder) => ({
     register: builder.mutation({
