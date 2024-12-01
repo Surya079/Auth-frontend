@@ -15,9 +15,7 @@ export const apiSlice = createApi({
   reducerPath: "apiSlice",
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
-    headers: {
-      Accept: "*",
-    },
+    mode: "cors",
   }),
   endpoints: (builder) => ({
     register: builder.mutation({
