@@ -15,7 +15,7 @@ const BASE_URL = import.meta.env.VITE_APP_API_URL;
 export const apiSlice = createApi({
   reducerPath: "apiSlice",
   baseQuery: fetchBaseQuery({
-    baseUrl: BASE_URL,
+    baseUrl: "https://auth-backend-gules.vercel.app/api",
   }),
   endpoints: (builder) => ({
     register: builder.mutation({
